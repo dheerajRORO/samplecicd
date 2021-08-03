@@ -18,4 +18,4 @@ jobs:
       run: xcodebuild build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       
     - name: Test testplan  
-      run: xcodebuild test -scheme SampleCICD -destination 'platform=iOS Simulator,OS=13.3,name=iPhone 11' -testPlan SampleCICDUnitTest
+      run: xcodebuild test -scheme SampleCICD -destination 'platform:iOS Simulator, id:40398680-8AE9-4D4C-BFB7-8190F275F50C, OS:14.4, name:iPhone 11' -testPlan SampleCICDUnitTest
