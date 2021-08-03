@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      working-directory: SampleCICD
-      run: xcodebuild build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-      
+    
     - name: Test testplan  
+      working-directory: SampleCICD
       run: xcodebuild test -scheme SampleCICD -destination 'platform=iOS Simulator,OS=13.3,name=iPhone 11' -testPlan SampleCICDUnitTest
