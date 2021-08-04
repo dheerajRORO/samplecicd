@@ -16,4 +16,5 @@ jobs:
       
     - name: Test testplan 
       working-directory: SampleCICD
-      run: xcodebuild test -scheme SampleCICD -destination 'platform:iOS Simulator, id:40398680-8AE9-4D4C-BFB7-8190F275F50C, OS:14.4, name:iPhone 11' -testPlan SampleCICDUnitTest
+      run: xcodebuild test -scheme SampleCICD -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro Max' -testPlan SampleCICDUnitTest 
+
